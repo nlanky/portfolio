@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #323232;
+  font-family: Helvetica;
+}
+#about, #contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#portfolio {
+  padding-bottom: 50px;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: Lora, 'Times New Roman', serif;
+  padding-bottom: 10px;
+}
+p:last-of-type {
+  padding-bottom: 20px;
+}
+.project-container {
+  padding-bottom: 30px;
+}
+h1.page-title {
+  text-align: center;
+  padding: 20px 0 30px 0;
+}
+h2.divider-title {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+ }
+h2.divider-title:before,
+h2.divider-title:after {
+  flex-grow: 1;
+  height: 1px;
+  content: '\a0';
+  background-color: #ddd;
+  position: relative;
+  top: 0.5em;
+}
+h2.divider-title:before {
+  margin-right: 20px;
+}
+h2.divider-title:after {
+  margin-left: 20px;
+}
+@media only screen and (max-width:768px) {
+  .column {
+    margin-bottom: 30px;
+  }
+}
+
+/*header and navigation*/
+header {
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: block;
+  padding: 10px 0;
+}
+.top-menu {
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+}
+.top-menu li a {
+  font-size: 14px;
+  padding: 0 20px;
+  color: #fff;
+}
+.top-menu li a:hover {
+  text-decoration: none;
+  opacity: 0.65;
+}
+
+/*footer*/
+footer {
+  padding: 15px 0;
+  background: #fcfefb;
+  border-top: 1px solid #e2e4e1;
+}
+footer p {
+  margin-bottom: 0;
+}
+footer p:last-of-type {
+  padding-bottom: 0;
+}
+
+/*contact form*/
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contact-form .form-control {
+  width: 100%;
+}
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+/*about*/
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*portfolio*/
+.project {
+  overflow: hidden;
+}
+.project img {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+}
+.project:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  opacity: 0;
+  background-color: rgba(255,255,255,0.9);
+  transition: opacity 0.15s ease-in-out 0s;
+  -webkit-transition: opacity 0.15s ease-in-out 0s;
+  -moz-transition: opacity 0.15s ease-in-out 0s;
+}
+.overlay-meta {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+#portfolio a {
+  color: #323232;
+}
