@@ -141,9 +141,12 @@ footer p:last-of-type {
   -moz-transition: opacity 0.15s ease-in-out 0s;
 }
 .overlay-meta {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.overlay-meta h3 {
+  margin: 0;
 }
 #portfolio a {
   color: #323232;
