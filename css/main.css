@@ -7,12 +7,9 @@ body {
   color: #323232;
   font-family: Helvetica;
 }
-#about, #contact {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-#portfolio {
-  padding-bottom: 50px;
+#about, #contact, #portfolio {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: Lora, 'Times New Roman', serif;
@@ -109,15 +106,10 @@ footer p:last-of-type {
   margin-bottom: 15px;
 }
 
-/*about*/
-.about-text {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 /*portfolio*/
 .project {
   overflow: hidden;
+  padding: 0;
 }
 .project img {
   transition: all 0.4s ease;
